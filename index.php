@@ -755,10 +755,6 @@ function statusController(status_process_id,diff)
     {
       status_process_id++;
 
- // This code remove GM - online
-    if(status_process_id == 4)
-      status_process_id++;
-
       if(status_process_id >= (status_process.length))
         status_process_id = 0;
     } while(status_next_process && status_process[status_process_id].action == 2);
@@ -797,11 +793,12 @@ function statusInit()
       status_process.push(new _status_action(3,2,1,1,time_to_show_maxonline));
       status_process.push(new _status_action(3,2,1,2,blinkTime));
     }
+    /*
     if(time_to_show_gmonline)
     {
       status_process.push(new _status_action(4,3,1,1,time_to_show_gmonline));
       status_process.push(new _status_action(4,3,1,2,blinkTime));
-    }
+    } */
   }
   else if(status_data[0] == 0) // offline
   {
@@ -884,7 +881,7 @@ function display()
 function start()
 {
   reset();
-  display();
+  //display();
 
   if(navigator.appName=="Netscape")
   {
@@ -911,7 +908,7 @@ function start()
 <div ID="world"></div>
 <div ID="outland"></div>
 <div ID="northrend"></div>
-<div ID="wow"><img src="<?php echo $img_base ?>realm_on.gif" id="statusIMG" style="position: absolute; border: 0px; left: 382; top: 0;" onClick="window.location='<?php echo $_SERVER['PHP_SELF'] ?>'"></a>
+<div ID="wow"><img src="<?php echo $img_base ?>realm_on.gif" id="statusIMG" style="position: absolute; border: 0px; left: 365; top: 0;" onClick="window.location='<?php echo $_SERVER['PHP_SELF'] ?>'"></a>
 </div>
 <div ID="info">
     <center>
