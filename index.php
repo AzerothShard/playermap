@@ -1,4 +1,8 @@
 <?php
+
+
+define("AZTH_PATH_TC_PLAYERMAP", dirname(__FILE__));
+
 require_once("pomm_conf.php");
 require_once("func.php");
 require_once("map_english.php");
