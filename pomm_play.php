@@ -1,6 +1,6 @@
 <?php
 
-
+require_once("defines.php");
 require_once("pomm_conf.php");
 require_once("func.php");
 require_once("map_english.php");
