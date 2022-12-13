@@ -1,7 +1,4 @@
 # AzerothShard Playermap
 
-## Configure
+:warning: We moved the development under [azerothcore/playermap](https://github.com/azerothcore/playermap/).:warning:
 
-Make a copy of config/playermap_config.php.conf and configure it.
-
-Open pomm_conf.php and set the realmd_id
